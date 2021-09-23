@@ -1,4 +1,4 @@
-class Computer {
+class Player {
   constructor(x, y, width, height) {
     var options = {
       isStatic: true
@@ -10,10 +10,11 @@ class Computer {
     this.height = height;
     this.image = loadImage("./assets/player.png");
 
-        World.add(world, this.body);
+    World.add(world, this.body);
   }
 
-   display() {
+ 
+  display() {
     var pos = this.body.position;
     var angle = this.body.angle;
     push();
